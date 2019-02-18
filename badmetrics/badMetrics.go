@@ -28,7 +28,7 @@ func (a ByMetric) Len() int           { return len(a) }
 func (a ByMetric) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a ByMetric) Less(i, j int) bool { return a[i].Metric < a[j].Metric }
 
-// maxAge is the age after which we expire old records (in practice a bit later)
+// New is the age after which we expire old records (in practice a bit later)
 func New(maxAge time.Duration) *BadMetrics {
 	b := &BadMetrics{
 		maxAge,

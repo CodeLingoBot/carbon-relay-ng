@@ -25,7 +25,7 @@ type RW struct {
 	notRe *regexp.Regexp
 }
 
-// NewFromByte creates a rewriter that will rewrite old to new, up to max times
+// New creates a rewriter that will rewrite old to new, up to max times
 // for regex, max must be -1
 func New(old, new, not string, max int) (RW, error) {
 	if len(old) == 0 {

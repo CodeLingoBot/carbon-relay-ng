@@ -247,7 +247,7 @@ func (c *Conn) HandleData() {
 	}
 }
 
-// returns a network/write error, so that it can be retried later
+// Write returns a network/write error, so that it can be retried later
 // deals with pickle errors internally because retrying wouldn't help anyway
 func (c *Conn) Write(buf []byte) (int, error) {
 	if c.pickle {

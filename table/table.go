@@ -94,7 +94,7 @@ func (table *Table) GetSpoolDir() string {
 	return table.SpoolDir
 }
 
-// This is used by inputs to record invalid packets
+// IncNumInvalid is used by inputs to record invalid packets
 // It also increments numIn so that it reflects the overall total
 func (table *Table) IncNumInvalid() {
 	table.numIn.Inc(1)

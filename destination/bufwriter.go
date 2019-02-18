@@ -30,7 +30,7 @@ type Writer struct {
 	durationOverflowFlush metrics.Timer
 }
 
-// NewWriterSize returns a new Writer whose buffer has at least the specified
+// NewWriter returns a new Writer whose buffer has at least the specified
 // size. If the argument io.Writer is already a Writer with large enough
 // size, it returns the underlying Writer.
 func NewWriter(w io.Writer, size int, key string) *Writer {

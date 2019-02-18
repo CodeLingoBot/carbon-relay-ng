@@ -58,8 +58,7 @@ func parseRetentionPart(retentionPart string) (int, error) {
 	return multiplier * int(value), err
 }
 
-/*
-  Parse a retention definition as you would find in the storage-schemas.conf of a Carbon install.
+/* Parse a retention definition as you would find in the storage-schemas.conf of a Carbon install.
   Note that this only parses a single retention definition, if you have multiple definitions (separated by a comma)
   you will have to split them yourself.
 
